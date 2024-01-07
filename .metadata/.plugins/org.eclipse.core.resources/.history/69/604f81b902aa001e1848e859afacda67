@@ -1,0 +1,16 @@
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(power(2, 4));
+	}
+
+	private static int power(int base, int exponent) {
+		// TODO Auto-generated method stub
+		if (exponent < 1)
+			return base;
+		return base * power(base, exponent - 1);
+	}
+
+}

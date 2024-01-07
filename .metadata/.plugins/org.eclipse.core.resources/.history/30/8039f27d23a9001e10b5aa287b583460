@@ -1,0 +1,69 @@
+public class DynamicArray {
+	int size;
+	int capacity = 10;
+	Object[] array;
+
+	public DynamicArray() {
+		this.array = new Object[this.capacity];
+	}
+
+	public DynamicArray(int capacity) {
+		this.capacity = capacity;
+		this.array = new Object[this.capacity];
+	}
+
+	public void add(Object data) {
+		if (this.size >= this.capacity) {
+			grow();
+		}
+
+		this.array[this.size] = data;
+		size++;
+	}
+
+	public void insert(int index, Object data) {
+	}
+
+	public void delete(Object data) {
+	}
+
+	public int search(Object data) {
+		return -1;
+	}
+
+	public void grow() {
+	}
+
+	public void shrink() {
+	}
+
+	public boolean isEmpty() {
+		return this.size == 0;
+	}
+
+	public String toString() {
+		String string = "";
+
+		for (int ctr = 0; ctr < this.size; ctr++) {
+			string += array[ctr] + ", ";
+		}
+
+		if (string != "") {
+			string = "[" + string.substring(0, string.length() - 2) + "]";
+		} else {
+			string = "[]";
+		}
+
+		return string;
+	}
+
+	public static void main(String[] args) {
+		DynamicArray array = new DynamicArray(3);
+
+//		array.add("test");
+//		array.add("james");
+//		array.add("steph");
+
+		System.out.println(array.toString());
+	}
+}

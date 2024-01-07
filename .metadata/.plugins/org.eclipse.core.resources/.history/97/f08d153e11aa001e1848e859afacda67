@@ -1,0 +1,12 @@
+package adjacency.list;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Graph {
+	ArrayList<LinkedList<Node>> list;
+	
+	Graph() {
+		this.list = new ArrayList<>();
+	}
+}

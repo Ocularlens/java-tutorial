@@ -1,0 +1,28 @@
+package binary.tree;
+
+public class BinarySearchTree {
+	Node root;
+
+	void insert(Node node) {
+
+	}
+
+	private Node insertHelper(Node root, Node node) {
+
+		return null;
+	}
+
+	void display() {
+	}
+
+	private void displayHelper() {
+	}
+
+	boolean search(int data) {
+		return false;
+	}
+
+	private boolean searchHelper(Node root, int data) {
+		return false;
+	}
+}

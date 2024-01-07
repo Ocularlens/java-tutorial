@@ -1,0 +1,5 @@
+package provider.sub;
+
+public class LoggerV2 {
+
+}

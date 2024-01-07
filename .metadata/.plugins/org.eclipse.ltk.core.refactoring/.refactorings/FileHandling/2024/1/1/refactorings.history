@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;FileDelete&apos; to &apos;FileDeleteMoveList&apos;&#x0D;&#x0A;- Original project: &apos;FileHandling&apos;&#x0D;&#x0A;- Original element: &apos;FileDelete&apos;&#x0D;&#x0A;- Renamed element: &apos;FileDeleteMoveList&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FileDelete&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{FileDelete.java[FileDelete" matchStrategy="1" name="FileDeleteMoveList" qualified="false" references="true" similarDeclarations="false" stamp="1704095276484" textual="false" version="1.0"/>
+</session>

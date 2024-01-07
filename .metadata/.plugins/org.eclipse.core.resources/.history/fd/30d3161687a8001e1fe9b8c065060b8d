@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class JavaHttp {
+	public static void main(String[] args) {
+		sendGet();
+	}
+	
+	public static void sendGet() throws IOException {
+//		https://jsonplaceholder.typicode.com/users
+		
+		URL url = new URL("https://jsonplaceholder.typicode.com/users");
+		HttpURLConnection con = (HttpURLConnection) url.openConnection();
+		
+		con.setRequestProperty("accept", "application/json");
+		
+		InputStream responseStream = con.getInputStream();
+		
+		// Finally we have the response
+		System.out.println(responseStream);
+	}
+}

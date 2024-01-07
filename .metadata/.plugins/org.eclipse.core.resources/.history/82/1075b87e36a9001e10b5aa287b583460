@@ -1,0 +1,26 @@
+import java.util.Arrays;
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		builtIn();
+	}
+	
+	public static void builtIn() {
+		int[] array = new int[100];
+		int target = 101;
+		
+		
+		for (int ctr = 0; ctr < array.length; ctr++) {
+			array[ctr] = ctr;
+		}
+		
+		int index = Arrays.binarySearch(array, target);
+		
+		System.out.println(index);
+	}
+	
+	public static void search() {}
+
+	
+}

@@ -1,0 +1,30 @@
+
+public class BubbleSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] nums = { 9, 3, 2, 32 };
+
+		int[] sorted = new int[nums.length];
+
+		sorted = bubbleSort(nums);
+
+		for (int ctr = 0; ctr < sorted.length; ctr++) {
+			System.out.println(sorted[ctr]);
+		}
+	}
+
+	public static int[] bubbleSort(int[] nums) {
+		// TODO Auto-generated method stub
+		int temp;
+		for (int ctr = 0; ctr < nums.length; ctr++) {
+			for (int ctr2 = 0; ctr2 < nums.length; ctr2++) {
+				System.out.println(nums[ctr] + "---" + nums[ctr2]);
+			}
+		}
+
+		int[] test = { 1, 2, 3 };
+		return test;
+	}
+
+}

@@ -1,0 +1,32 @@
+
+public class InterpolationSearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+		int index = interPolationSearch(array, 8);
+		
+		System.out.println(index);
+	}
+
+	private static int interPolationSearch(int[] array, int value) {
+		int low = 0;
+		int high = array.length - 1;
+
+		while (value >= array[low] && value <= array[high] && low <= high) {
+			int probe = low + (high - low) * (value - array[low]) / (array[high] - array[low]);
+			System.out.println("Probe: " + probe);
+
+			if (probe == value)
+				return probe;
+			else if (array[probe] < value)
+				low = probe + 1;
+			else
+				high = probe - 1;
+		}
+
+		return -1;
+	}
+
+}

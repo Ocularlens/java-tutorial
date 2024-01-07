@@ -1,0 +1,11 @@
+import java.util.Stack;
+
+public class StackSample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Stack stack = new Stack();
+	}
+
+}

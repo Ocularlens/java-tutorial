@@ -1,0 +1,13 @@
+
+public class GenericClass<T, T2> {
+	T x;
+	T y;
+
+	GenericClass(T x) {
+		this.x = x;
+	}
+
+	public T getValue() {
+		return this.x;
+	}
+}

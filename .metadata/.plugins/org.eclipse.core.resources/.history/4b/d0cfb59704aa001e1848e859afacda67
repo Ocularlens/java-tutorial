@@ -1,0 +1,29 @@
+
+public class MergeSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] nums = { 4, 9, 3, 2, 5, 7, 6, 8, 1 };
+
+		mergeSort(nums);
+
+		for (int num : nums) {
+			System.out.print(num);
+		}
+	}
+
+	private static void mergeSort(int[] nums) {
+		int length = nums.length;
+		if (length <= 1)
+			return;
+
+		int middle = (int) length / 2;
+		int[] left = new int[middle];
+		int[] right = new int[middle];
+	}
+
+	private static void merge(int[] left, int[] right, int[] array) {
+
+	}
+
+}

@@ -1,0 +1,14 @@
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class FileCreate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Path path = Path.of("data");
+		System.out.println(path.getParent());
+		
+//		Path file = Files.createTempFile(null, null, null)
+	}
+
+}

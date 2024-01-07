@@ -1,0 +1,9 @@
+
+public class QuickSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] nums = { 4, 9, 3, 2, 5, 7, 6, 8, 1 };
+	}
+
+}

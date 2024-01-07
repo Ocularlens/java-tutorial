@@ -1,0 +1,19 @@
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		walk(9);
+	}
+
+	private static void walk(int i) {
+		if (i == 0) {
+			System.out.println("STOP");
+		} else {
+			System.out.println("WALK = " + i);
+			i = i - 1;
+			walk(i);
+		}
+	}
+
+}

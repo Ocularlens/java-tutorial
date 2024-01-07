@@ -1,0 +1,33 @@
+
+public class SelectionSort {
+
+	public static void main(String[] args) {
+		int[] nums = { 2, 9, 8, 3, 4, 5, 7, 6, 9, 1 };
+
+		nums = selectionSort(nums);
+
+		for (int num : nums) {
+			System.out.println(num);
+		}
+	}
+
+	private static int[] selectionSort(int[] nums) {
+		int temp = 0, min;
+		for (int ctr = 0; ctr < nums.length; ctr++) {
+			min = nums[ctr];
+			for (int ctr2 = ctr; ctr2 < nums.length; ctr2++) {
+				if (min > nums[ctr2]) {
+					min = nums[ctr2];
+					temp = ctr2;
+				}
+			}
+			if (min != nums[ctr]) {
+				nums[temp] = nums[ctr];
+				nums[ctr] = min;
+			}
+
+		}
+		return nums;
+	}
+
+}

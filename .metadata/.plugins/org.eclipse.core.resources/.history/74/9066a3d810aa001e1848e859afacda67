@@ -1,0 +1,5 @@
+package adjacency.list;
+
+public class Node {
+
+}

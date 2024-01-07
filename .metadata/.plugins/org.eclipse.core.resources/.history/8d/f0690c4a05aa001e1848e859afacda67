@@ -1,0 +1,43 @@
+
+public class MergeSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] nums = { 4, 9, 3, 2, 5, 7, 6, 8, 1 };
+
+		mergeSort(nums);
+
+		for (int num : nums) {
+			System.out.print(num);
+		}
+	}
+
+	private static void mergeSort(int[] nums) {
+		int length = nums.length;
+		if (length <= 1)
+			return;
+
+		int middle = length / 2;
+		int[] left = new int[middle];
+		int[] right = new int[length - middle];
+
+		int leftInt = 0;
+		int rightInt = 0;
+
+		for (; leftInt < length; leftInt++) {
+			if (leftInt < middle) {
+				left[leftInt] = nums[leftInt];
+			} else {
+				right[rightInt] = nums[leftInt];
+				rightInt++;
+			}
+		}
+		
+		mergeSort(left);
+	}
+
+	private static void merge(int[] left, int[] right, int[] array) {
+
+	}
+
+}

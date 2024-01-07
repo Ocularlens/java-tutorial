@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.nio.file.FileAlreadyExistsException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class FileCreate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Path path = Path.of("data");
+		try {
+//			Path file = Files.createTempFile(path, "myStr", ".txt");
+//			Files.writeString(file, "ALdous TEST STRING");
+
+			Path file2 = Files.createFile(path.resolve("generated.txt"));
+			Files.writeString(file2, "Aldous Christian R. Javier - Java Programmer");
+		} catch (FileAlreadyExistsException e) {
+			System.out.println("File already generated");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

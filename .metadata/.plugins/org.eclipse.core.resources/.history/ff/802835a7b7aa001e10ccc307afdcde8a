@@ -1,0 +1,18 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static <T> void displayArray(T[] array) {
+		for (T x : array) {
+			System.out.print(x + " ");
+		}
+	}
+
+	public static <T> T firstElement(T[] array) {
+		return array[0];
+	}
+}

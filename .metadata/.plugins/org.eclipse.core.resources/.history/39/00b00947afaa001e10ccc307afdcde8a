@@ -1,0 +1,7 @@
+package binary.tree;
+
+public class BinarySearchTree {
+	BinarySearchTree() {
+		
+	}
+}

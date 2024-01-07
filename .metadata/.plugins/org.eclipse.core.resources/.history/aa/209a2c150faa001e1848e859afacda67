@@ -1,0 +1,11 @@
+
+public class AndjacenyMatrix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Graph graph = new Graph(5);
+
+		graph.addNode(new Node('A'));
+	}
+
+}
